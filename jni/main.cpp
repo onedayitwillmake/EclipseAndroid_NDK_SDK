@@ -31,7 +31,6 @@ void Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeInit(JNIEnv*  env, jobject thi
 
         AppDelegate *pAppDelegate = new AppDelegate();
         cocos2d::CCApplication::sharedApplication().run();
-//        cocos2d::CCApplication::sharedApplication().run();
     }
     else
     {
