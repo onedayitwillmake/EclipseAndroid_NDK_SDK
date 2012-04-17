@@ -7,14 +7,8 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-/*
- * Class:     com_myproject_MyActivity
- * Method:    getMyData
- * Signature: ()Ljava/lang/String;
- */
-JNIEXPORT jstring JNICALL Java_com_myproject_MyActivity_getMyData
-  (JNIEnv *, jobject);
-
+#undef com_myproject_MyActivity_HANDLER_SHOW_DIALOG
+#define com_myproject_MyActivity_HANDLER_SHOW_DIALOG 1L
 #ifdef __cplusplus
 }
 #endif
