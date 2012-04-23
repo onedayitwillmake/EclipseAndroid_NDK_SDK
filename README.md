@@ -17,7 +17,10 @@ _It is assumed you already have:_
 *    Fix symbolic links in project root (ANDROID_SDK/ANDROID_NDK) to point to your own paths
 *    The project should build
 
-
+### Cocos2dx project template
+*	There exist a working cocos2dx project as a branch in this repository (the secret real purpose of this project :)
+	* [https://github.com/onedayitwillmake/EclipseAndroid_NDK_SDK/tree/cocos2dx](https://github.com/onedayitwillmake/EclipseAndroid_NDK_SDK/tree/cocos2dx)  
+	
 ### Support information
 *    Although its made with reproducibility mind, I provide no support for this project :)
     * Mario Gonzalez [(@1dayitwillmake)](http://twitter.com/#!/1dayitwillmake) - [http://onedayitwillmake.com](http://onedayitwillmake.com)

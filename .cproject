@@ -20,32 +20,35 @@
 					<folderInfo id="0.756827735." name="/" resourcePath="">
 						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.294545719" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
 							<targetPlatform id="org.eclipse.cdt.build.core.prefbase.toolchain.294545719.993860072" name=""/>
-							<builder arguments="-C ${ProjDirPath} NDK_MODULE_PATH=${COCOS2DX_ROOT}:${COCOS2DX_ROOT}/cocos2dx/platform/third_party/android/prebuilt" command="${ProjDirPath}/ANDROID_NDK/ndk-build" id="org.eclipse.cdt.build.core.settings.default.builder.1648661634" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
+							<builder arguments="-C ${ProjDirPath} NDK_MODULE_PATH=${COCOS2DX_ROOT}:${COCOS2DX_ROOT}/cocos2dx/platform/third_party/android/prebuilt" command="${ProjDirPath}/ANDROID_NDK/ndk-build" id="org.eclipse.cdt.build.core.settings.default.builder.1648661634" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="2" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.1844369373" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.991472034" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
 								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1413805376" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/jni&quot;"/>
 									<listOptionValue builtIn="false" value="../ANDROID_NDK/platforms/android-9/arch-arm/usr/include"/>
 									<listOptionValue builtIn="false" value="../ANDROID_NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/darwin-x86/lib/gcc/arm-linux-androideabi/4.4.3/include"/>
 									<listOptionValue builtIn="false" value="../COCOS2DX/cocos2dx/include"/>
-									<listOptionValue builtIn="false" value="../COCOS2DX/cocos2dx/"/>
+									<listOptionValue builtIn="false" value="../COCOS2DX/cocos2dx"/>
 								</option>
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1052916547" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.2035290044" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
 								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.898748423" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/jni&quot;"/>
 									<listOptionValue builtIn="false" value="../ANDROID_NDK/platforms/android-9/arch-arm/usr/include"/>
 									<listOptionValue builtIn="false" value="../ANDROID_NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/darwin-x86/lib/gcc/arm-linux-androideabi/4.4.3/include"/>
 									<listOptionValue builtIn="false" value="../COCOS2DX/cocos2dx/include"/>
-									<listOptionValue builtIn="false" value="../COCOS2DX/cocos2dx/"/>
+									<listOptionValue builtIn="false" value="../COCOS2DX/cocos2dx"/>
 								</option>
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.944632859" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.731367497" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
 								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1548475709" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/jni&quot;"/>
 									<listOptionValue builtIn="false" value="../ANDROID_NDK/platforms/android-9/arch-arm/usr/include"/>
 									<listOptionValue builtIn="false" value="../ANDROID_NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/darwin-x86/lib/gcc/arm-linux-androideabi/4.4.3/include"/>
 									<listOptionValue builtIn="false" value="../COCOS2DX/cocos2dx/include"/>
-									<listOptionValue builtIn="false" value="../COCOS2DX/cocos2dx/"/>
+									<listOptionValue builtIn="false" value="../COCOS2DX/cocos2dx"/>
 								</option>
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1615206779" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
@@ -66,7 +69,8 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="refreshScope" versionNumber="1">
-		<resource resourceType="PROJECT" workspacePath="/MyProject"/>
+		<resource resourceType="PROJECT" workspacePath="/HelloCocos2dx"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>
