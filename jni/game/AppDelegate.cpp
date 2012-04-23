@@ -1,8 +1,6 @@
 #include "AppDelegate.h"
 
 #include "cocos2d.h"
-#include "HelloWorldScene.h"
-
 #include "CCEGLView.h"
 
 USING_NS_CC;
@@ -90,6 +88,10 @@ bool AppDelegate::initInstance() {
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
+
+	srandom( time(NULL) );
+
+
 	// initialize director
 	CCDirector *pDirector = CCDirector::sharedDirector();
 
@@ -107,10 +109,13 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	pDirector->setAnimationInterval(1.0 / 60);
 
 	// create a scene. it's an autorelease object
-	CCScene *pScene = HelloWorld::scene();
+	_scene = CCScene::node();
+
+	_layer = HelloCocos2dx::node(); // 'layer' is an autorelease object
+	_scene->addChild(_layer); // add layer as a child to scene
 
 	// run
-	pDirector->runWithScene(pScene);
+	pDirector->runWithScene( _scene );
 
 	return true;
 }
@@ -118,6 +123,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
 // This function will be called when the app is inactive. When comes a phone call,it's be invoked too
 void AppDelegate::applicationDidEnterBackground() {
 	CCDirector::sharedDirector()->pause();
+	CCDirector::sharedDirector()->end();
+
 
 	// if you use SimpleAudioEngine, it must be pause
 	// SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
@@ -130,3 +137,10 @@ void AppDelegate::applicationWillEnterForeground() {
 	// if you use SimpleAudioEngine, it must resume here
 	// SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
 }
+
+void AppDelegate::onSimpleKeyPress( int keyCode ) {
+	_layer->onSimpleKeyPress( keyCode );
+}
+
+
+

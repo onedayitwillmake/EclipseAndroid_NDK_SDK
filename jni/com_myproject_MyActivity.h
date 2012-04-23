@@ -9,6 +9,14 @@ extern "C" {
 #endif
 #undef com_myproject_MyActivity_HANDLER_SHOW_DIALOG
 #define com_myproject_MyActivity_HANDLER_SHOW_DIALOG 1L
+/*
+ * Class:     com_myproject_MyActivity
+ * Method:    onSimpleKeyPressed
+ * Signature: (I)V
+ */
+JNIEXPORT void JNICALL Java_com_myproject_MyActivity_onSimpleKeyPressed
+  (JNIEnv *, jobject, jint);
+
 #ifdef __cplusplus
 }
 #endif

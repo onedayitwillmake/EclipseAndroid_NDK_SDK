@@ -13,9 +13,12 @@ LOCAL_MODULE_FILENAME := libgame
 
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/jni $(COCOS2DX_ROOT)/cocos2dx/include                   
-LOCAL_SRC_FILES := main.cpp \
-                   AppDelegate.cpp \
-                   HelloWorldScene.cpp
+LOCAL_SRC_FILES :=	com_myproject_MyActivity.cpp \
+					game/AppDelegate.cpp \
+					game/HelloCocos2dx.cpp \
+					
+all:
+	@echo $(LOCAL_PATH)
         
 LOCAL_WHOLE_STATIC_LIBRARIES := cocos2dx_static cocosdenshion_static
 
